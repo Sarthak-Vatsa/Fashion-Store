@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <style>
+    /* CSS styles */
+    body {
+      /* font-family: Arial, sans-serif; */
+      margin: 0;
+      padding: 0;
+      background: url(Img/login_back.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 80px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-small {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+    form #loginbutton{
+      margin: 30px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <section id='header'>
+    <a href="#"><img src="Img/logo.jpg" class="logo" alt=""></a>
+    <div>
+      <ul id="navbar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="home.html">Shop</a></li>
+        <li><a target="_blank" href="about_us.html">About</a></li>
+        <li><a href="#footer">Contact</a></li>
+        <li><a class="active" href="#">Log In</a></li>
+        <li><a target="_blank" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+    </div>
+  </section>
+  <div class="container">
+    <h1>Login</h1>
+
+    <form onsubmit="validateForm(event)">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <button id="loginbutton" type="submit">Login</button>
+
+      <p class="text-center text-small">Don't have an account? <a href="sign.html">Register</a></p>
+    </form>
+  </div>
+  <footer id="footer" class="section-p1">
+    <div class="col">
+      <img class="logo" src="Img/logo.jpg" alt="">
+      <h4>Contact Us</h4>
+      <p><strong>Address:</strong> NIT Kururshetra,Haryana</p>
+      <p><strong>Phone:</strong> 9990003332</p>
+      <p><strong>Hours:</strong> 09:00 - 17:00 IST MON-SAT</p>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a target="_blank" href="about_us.html">About Us</a>
+      <a target="_blank" href="#">Privacy Policy</a>
+      <a target="_blank" href="#">Terms & Conditions</a>
+    </div>
+    <div class="col">
+      <h4>Services</h4>
+      <p>Free Shipping</p>
+      <p>Online Order</p>
+      <p>Save Money</p>
+      <p>Promotions</p>
+      <p>24/7 Support</p>
+    </div>
+    <div class="col">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <a target="_blank"
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwijrue4p5b_AhUXklYBHYp1B2wQFnoECAwQAQ&url=https%3A%2F%2Fwww.facebook.com%2Flogin%2F&usg=AOvVaw2NEj8NwnxhOue64pSijk7e">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a target="_blank"
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwij-vfKp5b_AhV6q1YBHb-pAxMQFnoECAgQAQ&url=https%3A%2F%2Ftwitter.com%2Flogin&usg=AOvVaw3swNPrVfKaBGiX8TGfSpkN">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a target="_blank"
+          href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiL3P3Xp5b_AhUQsFYBHQucB7cQFnoECA4QAQ&url=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Flogin%2F&usg=AOvVaw0BRCgcMCVNSSLcNcVjPzsz">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 MYFASHION. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // JavaScript code
+    function validateForm(event) {
+      event.preventDefault();
+
+      var usernameInput = document.getElementById('username');
+      var passwordInput = document.getElementById('password');
+
+      var username = usernameInput.value;
+      var password = passwordInput.value;
+
+      var errorContainer = document.createElement('div');
+      errorContainer.classList.add('error');
+
+      if (username.trim() === '') {
+        errorContainer.textContent = 'Please enter your username.';
+        usernameInput.parentNode.insertBefore(errorContainer, usernameInput.nextSibling);
+        return;
+      }
+
+      if (password.trim() === '') {
+        errorContainer.textContent = 'Please enter your password.';
+        passwordInput.parentNode.insertBefore(errorContainer, passwordInput.nextSibling);
+        return;
+      }
+
+      // Perform login logic here
+      alert('Login successful!');
+    }
+  </script>
+</body>
+
+</html>

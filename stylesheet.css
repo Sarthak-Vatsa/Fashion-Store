@@ -1,0 +1,217 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Righteous', cursive; */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navigation {
+    display: flex;
+    background-color: #1410100d;
+    position: sticky;
+    top: 0px;
+
+}
+
+#navigation img {
+    width: 40px;
+    height: 40px;
+    margin: 13px;
+    border-radius: 40px;
+
+}
+
+.container {
+    display: flex;
+
+
+}
+
+.box {
+    color: white;
+    list-style: none;
+    padding: 5px 2px;
+    margin: 19px;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+.box a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(Img/bg2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: -1;
+    opacity: 2.3;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
+    margin: 38px 300px;
+    ;
+}
+
+#home h1 {
+    font-size: 40px;
+    padding: 46px;
+}
+
+#home p {
+    font-size: 20px;
+}
+
+.btn {
+    background-color: #d9bebe;
+    border: 2px solid yellow;
+    color: white;
+    border-radius: 15px;
+    padding: 11px 30px;
+    margin: 36px;
+    font-size: 14px;
+
+}
+
+.btn:hover {
+    transition: all .4s ease-in;
+    transform: scale(1.3);
+    background-color: white;
+    color: red;
+
+
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5e2e2;
+
+}
+
+.boxs {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    border-radius: 30px;
+    margin: 60px;
+    width: 253px;
+    height: 300px;
+
+}
+
+.boxs .heading3 {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#services #box1 {
+    background: url('Img/traditional.jpg') no-repeat center center/cover;
+    transition: all 0.5s ease-in;
+
+}
+
+#services #box1:hover {
+    transform: scale(1.2);
+
+}
+
+#services #box2 {
+    background: url('Img/wedding.jpg') no-repeat center center/cover;
+    transition: all 0.5s ease-in;
+
+}
+
+#services #box2:hover {
+    transform: scale(1.2);
+
+}
+
+#services #box3 {
+    background: url('Img/western.jpg') no-repeat center center/cover;
+    transition: all 0.5s ease-in;
+
+}
+
+#services #box3:hover {
+    transform: scale(1.2);
+
+}
+
+.form {
+    background: url('bg6.jpg') no-repeat center center/cover;
+    opacity: 0.5;
+}
+
+.form h1 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    padding: 18px;
+
+}
+
+.info input {
+    display: block;
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 50%;
+    margin: 31px auto;
+    background-color: #d9bebe;
+    padding: 9px;
+    text-align: center;
+
+}
+
+.sub {
+    display: block;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 6px;
+
+}
+
+.sub:hover {
+    background-color: #d9bebe;
+    color: white;
+}
+
+.end {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: 4px solid black;
+}
